@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	// Add '0' chars
 	fclose(fr);
 	fw = fopen(argv[1],"a");
-	for(i=0; i < (4096-(fsize+1)); i++)
+	for(i=0; i < (4096-fsize); i++)
 	{
 		putc('0',fw);
 	}
